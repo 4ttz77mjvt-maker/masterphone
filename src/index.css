@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+
+  /* Custom Premium Hardware Palette */
+  --color-background: #111415;
+  --color-on-surface: #e2e2e4;
+  --color-on-surface-variant: #a0a4a8;
+  --color-primary-container: #ff6600;
+  --color-on-primary-container: #ffffff;
+  --color-surface-container-lowest: #0c0d0e;
+  --color-surface-container: #171a1b;
+  --color-surface-container-high: #1e2123;
+  --color-surface-container-highest: #282c2f;
+  --color-outline-variant: #34393d;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-background);
+    color: var(--color-on-surface);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Glassmorphism Styles */
+.glass-card {
+  background: rgba(23, 26, 27, 0.45);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 102, 0, 0.08);
+}
+
+.text-glow {
+  text-shadow: 0 0 30px rgba(255, 102, 0, 0.3);
+}
+
+/* Dark/Light Overrides */
+.app-light {
+  --color-background: #fbfbf9;
+  --color-on-surface: #1e1e1a;
+  --color-on-surface-variant: #5c5d58;
+  --color-primary-container: #ff5500;
+  --color-on-primary-container: #ffffff;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container: #f4f4f2;
+  --color-surface-container-high: #eaeae6;
+  --color-surface-container-highest: #deded9;
+  --color-outline-variant: #cfcfc8;
+}
+
+.app-light body {
+  background-color: var(--color-background);
+  color: var(--color-on-surface);
+}
+
+/* Fade In Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* RTL Specific Tweaks for Arabic Language */
+[dir="rtl"] {
+  text-align: right;
+}
+
+[dir="rtl"] .text-left {
+  text-align: right;
+}
+
+[dir="rtl"] .text-right {
+  text-align: left;
+}
+
+[dir="rtl"] .flex-row-reverse {
+  flex-direction: row;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-surface-container-lowest);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-outline-variant);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary-container);
+}
+

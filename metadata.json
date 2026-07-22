@@ -1,0 +1,6 @@
+{
+  "name": "Master Phone",
+  "description": "Premium technical smartphone repair and hardware retail portal with support for Arabic language, dark mode, Algerian Dinar conversion, and Algerian Wilaya locations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

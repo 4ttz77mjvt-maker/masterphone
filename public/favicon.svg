@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <!-- Rounded Square Background with premium dark-blue gradient feel -->
+  <rect width="100" height="100" rx="22" fill="#0F172A"/>
+  <!-- Accent Ring -->
+  <rect x="6" y="6" width="88" height="88" rx="18" stroke="#38BDF8" stroke-width="2" stroke-opacity="0.2"/>
+  
+  <!-- Outer Smartphone Frame -->
+  <rect x="30" y="16" width="40" height="68" rx="8" stroke="#38BDF8" stroke-width="4" stroke-linejoin="round"/>
+  <!-- Screen Area -->
+  <rect x="34" y="22" width="32" height="48" rx="3" fill="#1E293B"/>
+  
+  <!-- Speaker / Earpiece -->
+  <line x1="46" y1="19" x2="54" y2="19" stroke="#38BDF8" stroke-width="2" stroke-linecap="round"/>
+  <!-- Home Indicator -->
+  <line x1="45" y1="80" x2="55" y2="80" stroke="#38BDF8" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Master Gear / Repair symbol inside the screen -->
+  <path d="M50 34 C45 34 41 38 41 43 C41 48 45 52 50 52 C55 52 59 48 59 43 C59 38 55 34 50 34 Z" fill="#38BDF8" />
+  <!-- Star / Wrench style teeth -->
+  <path d="M50 30 L50 34 M50 52 L50 56 M37 43 L41 43 M59 43 L63 43 M41 34 L44 37 M56 49 L59 52 M41 52 L44 49 M56 37 L59 34" stroke="#38BDF8" stroke-width="3" stroke-linecap="round"/>
+  <!-- Center Core -->
+  <circle cx="50" cy="43" r="4" fill="#0F172A" />
+</svg>
